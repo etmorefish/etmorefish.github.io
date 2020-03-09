@@ -116,3 +116,27 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
+# 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+post_end_tag:
+  enabled: true  # 是否开启文末的本文结束标记
+  icon: paw # 结束标记之间的图标
+
+# 配置feed信息
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 10
+  hub:
+  content: 'true'
+# algolia:
+#   applicationID: 'ZMZUOO0JRD'
+#   indexName: 'indexName'
+#   chunkSize: 5000
