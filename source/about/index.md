@@ -6,10 +6,12 @@ comments: false
 ---
 
 > ## 关于本人
+>
+> 微信
+>
+> ![wuchat.jpg](https://i.loli.net/2020/05/16/NrgUFpePBcxf7H4.jpg)
+>
 > 
->
->
->
 >
 
 
