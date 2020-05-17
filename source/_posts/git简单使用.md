@@ -85,3 +85,58 @@ tags:
 
 保留当前活动  `git stash`
 `切换分支`  `git checkout feature/additional` 
+
+# git本地版本回退与远端版本回退(回滚)
+
+> 一个commit对应这一个版本，有一个commit id，40位的16进制数字，通过SHA1计算得到，不同的文件计算出来的SHA1值不同(有很小的几率相同，可忽略)，这样每一个提交都有其独特的id。每提交一个新版本，实际上Git就会把它们自动串成一条时间线。
+> 在Git中，HEAD表示当前版本，也就是e620a6ff0940a8dff…，HEAD^表示上一个版本，HEAD^^表示上上一个版本，往上100个版本可以写成HEAD加连续100个^，也可以写成：HEAD~100。
+>
+
+**git log：**该命令显示从最近到最远的提交日志。
+
+**git log --pretty=oneline：**将只会显示提交的commit id号和对应的注释。(这里是两个-，Markdown显示两个-为一个-)
+
+**git reset –hard commit_id 或则是 git reset –hard HEAD^**
+
+```
+git reset --hard HEAD^   # hard选项，表示彻底将工作区、暂存区和版本库记录恢复到指定的版本库
+```
+
+使用git reset –hard 进行版本回退之后，在本地查看README.md，里面已经变为版本2对应的内容了。
+
+##　**如果你在本地做了错误提交，那么回退版本的方法很简单**
+1.先用下面命令找到要回退的版本的commit id：
+
+```
+git reflog 1
+```
+
+2.接着回退版本:
+
+```
+git reset --hard a7e1d279
+```
+
+a7e1d279就是你要回退的版本的commit id的前面几位。
+
+## 远程分支版本回退的方法
+如果你的错误提交已经推送到自己的远程分支了，那么就需要回滚远程分支了。
+1.首先要回退本地分支：
+
+```shell
+git reflog
+git reset --hard Obfafd
+```
+
+2.紧接着强制推送到远程分支：
+
+```shell
+git push -f origin master ## 这里假设只有一个master分支
+```
+
+origin就是一个名字，它是在你clone一个托管在Github上代码库时，git为你默认创建的指向这个远程代码库的标签，origin指向的是repository，master只是这个repository中默认创建的第一个branch。当你git push的时候因为origin和master都是默认创建的，所以可以这样省略。
+
+
+> 注意：本地分支回滚后，版本将落后远程分支，必须使用强制推送覆盖远程分支，否则无法推送到远程分支
+>  
+
