@@ -6,14 +6,14 @@
 title: 要多吃鱼
 subtitle: 个人笔记
 description: 软件工程 | 全栈工程师ing 
-keywords: "maolei 笔记 python 爬虫 算法 微信小程序"
+keywords: "maolei 笔记 python java 爬虫 算法 微信小程序"
 author: 毛雷
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://xxml.xyz
+url: https://maolei.club/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -155,6 +155,6 @@ live2d:
 
 baidu_url_submit:
   count: 100
-  host: godweiyang.com
+  host: maolei.club
   token:  # 填写你的百度统计token，不写也没事
   path: baidu_urls.txt
