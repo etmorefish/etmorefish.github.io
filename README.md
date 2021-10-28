@@ -1,5 +1,3 @@
 # Blog
 
-https://xxml.xyz/
-
-https://maolei.club/
+https://www.maolei.space
