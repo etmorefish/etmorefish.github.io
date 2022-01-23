@@ -101,7 +101,7 @@ blockquote {
 }
 
 pre {
-    padding: 2rem 1rem 1rem 1rem !important;
+    padding: 2rem 1rem 1rem 3rem !important;
     border-radius: 0.35rem;
     tab-size: 4;
 }
@@ -241,8 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #0e4fc5b0 0%, #12a02adb 100%);
-    opacity: 0.7;
+    background-image: linear-gradient(to right, #f51c47 0%, #0f9d58 100%);
 }
 
 .text-color {
@@ -1866,8 +1865,13 @@ footer .copy-right {
     margin: -15px 0 10px 10px;
 }
 
+p.search-result-summary{
+    margin: 15px 0 0 -8px;
+}
+
 #searchResult .search-result-list {
     margin-left: -8px;
+    margin-top: 0px;
     padding-left: 0;
     color: #666;
 }

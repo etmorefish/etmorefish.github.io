@@ -3,7 +3,7 @@
 <% } else { %>
     <%- partial('_partial/bg-cover') %>
 <% } %>
-
+<%- partial('_partial/bg-video') %>
 <main class="content">
 
     <% if (page.current === 1
@@ -21,7 +21,7 @@
                         <%- partial('_widget/music') %>
                         <% } %>
 
-                    <% if (theme.video.enable) { %>
+                    <% if (theme.video.enable && ( theme.video.url || theme.video.iframeUrl ) ) { %>
                         <%- partial('_widget/video') %>
                     <% } %>
 
@@ -55,6 +55,7 @@
     <article id="articles" class="container articles">
         <div class="row article-row">
             <% page.posts.forEach(post => { %>
+            <% if (post.hide != true)  { %> <!-- 隐藏某个文章 -->
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
                     <a href="<%- url_for(post.path) %>">
@@ -120,6 +121,7 @@
                     <% } %>
                 </div>
             </div>
+            <% } %>  <!-- 隐藏某个文章 -->
             <% }); %>
         </div>
     </article>

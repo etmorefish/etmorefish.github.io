@@ -7,6 +7,7 @@ archives: Archives
 about: About
 contact: Contact
 friends: Friends
+galleries: galleries
 startRead: Start
 recommendedPosts: Recommended Posts
 publishDate: Publish Date
@@ -45,7 +46,7 @@ reprint: Reprint policy
 author: Author
 link: Link
 use: All articles in this blog are used except for special statements
-licensed: reprint polocy. If reproduced, please indicate source
+licensed: reprint policy. If reproduced, please indicate source
 cc_by_url: https://creativecommons.org/licenses/by/4.0/deed.zh
 cc_by_name: CC BY 4.0
 cc_by_nd_url: https://creativecommons.org/licenses/by-nd/4.0/deed.zh
@@ -69,3 +70,13 @@ paycontact: Please contact the author
 payreprint: to pay for reprinting.
 pleaseFollowReprintPolicy: Copied successfully, please follow the reprint policy of this article
 checkPolicy: more
+siteTotalWords: Total Words
+siteTotalVisits: Total visits
+siteTotalVisitors: Total visitors
+Index: Index
+Tags: Tags
+Categories: Categories
+Archives: Archives
+About: About
+Contact: Contact
+Friends: Friends

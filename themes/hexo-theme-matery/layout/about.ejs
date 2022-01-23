@@ -56,19 +56,11 @@
                 <% if (theme.myGallery && theme.myGallery.enable) { %>
                 <%- partial('_widget/my-gallery') %>
                 <% } %>
-
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <div class="card-content article-card-content">
-                        <div class="title center-align" data-aos="zoom-in-up">
-                            <i class="fa fa-address-book"></i>&nbsp;&nbsp;<%- __('myCV') %>
-                        </div>
-                        <div id="articleContent" data-aos="fade-up">
-                            <%- page.content %>
-                        </div>
-                </div>
+                
+                <% if (theme.artitalk && theme.artitalk.enable) { %>
+                <%- partial('_widget/artitalk') %>
+                <% } %>
+                
             </div>
         </div>
     </div>
