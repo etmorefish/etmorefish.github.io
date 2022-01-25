@@ -1,7 +1,7 @@
 ---
 title: ubuntu20 mysql8.0
 tags:
-  - mysql
+  - Mysql
 categories:
   - Linux
 top: false

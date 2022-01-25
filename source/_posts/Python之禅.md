@@ -3,7 +3,7 @@ title: Python之禅
 tags: 
 	- Python
 categories: 
-	-Python
+	- Python
 
 ---
 ## Zen of Python（Python之禅）

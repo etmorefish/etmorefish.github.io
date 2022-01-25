@@ -1,9 +1,9 @@
 ---
 title: Ubuntu下docker实践
 tags:
-  - docker
+  - Docker
 categories:
-  - docker
+  - Docker
 top: false
 date: 2020-05-5 21:33:18
 ---

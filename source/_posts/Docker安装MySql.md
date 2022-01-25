@@ -1,9 +1,9 @@
 ---
 title: Docker安装MySql
 tags:
-  - docker
+  - Docker
 categories:
-  - docker
+  - Docker
 top: false
 date: 2020-05-6 01:48:42
 ---

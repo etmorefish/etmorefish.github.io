@@ -1,7 +1,7 @@
 ---
 title: PEP8风格指南
 tags:
-  - python
+  - Python
 categories:
   - 编程
 top: false

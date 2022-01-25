@@ -1,9 +1,9 @@
 ---
 title: Git 同时上传项目至github和gitee
 tags:
-  - git
+  - Git
 categories:
-  - git
+  - Git
 top: false
 date: 2020-04-27 22:36:19
 ---
