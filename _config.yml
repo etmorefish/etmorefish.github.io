@@ -5,15 +5,15 @@
 # Site
 title: 要多吃鱼
 subtitle: 个人笔记
-description: 软件工程 | 全栈工程师ing 
-keywords: "maolei 笔记 python java 爬虫 算法 微信小程序"
+description: 软件工程 | 腾讯云原生高级开发工程师
+keywords: "maolei 笔记 python golang 云原生 爬虫 算法 微信小程序"
 author: 毛雷
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://maolei.club/
+url: https://maolei.space/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -128,7 +128,7 @@ theme: hexo-theme-matery
 deploy:
 - type: git
   repository:
-    github: https://github.com/lei025/lei025.github.io.git
+    github: git@github.com:lei025/lei025.github.io.git
     # coding: git@e.coding.net:godweiyang/godweiyang.git
   branch: master
 - type: baidu_url_submitter
