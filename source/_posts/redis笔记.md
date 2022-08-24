@@ -1,3 +1,12 @@
+---
+title:  Redis 笔记
+tags:
+  - Redis
+categories:
+  - 数据库
+top: false
+date: 2020-07-30 19:16:05
+---
 # Redis笔记
 
 ## 常用命令
