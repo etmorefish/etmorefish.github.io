@@ -266,12 +266,12 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Python:
+    Go:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
-    Java:
+      percent: 80%
+    Python:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 70%
+      percent: 85%
     微信小程序:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
       percent: 80%
