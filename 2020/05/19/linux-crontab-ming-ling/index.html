@@ -530,10 +530,10 @@ crond 命令每分锺会定期检查是否有要执行的工作，如果有要�
 <li>1、系统执行的工作：系统周期性所要执行的工作，如备份系统数据、清理缓存</li>
 <li>2、个人执行的工作：某个用户定期要做的工作，例如每隔10分钟检查邮件服务器是否有新信，这些工作可由每个用户自行设置</li>
 </ul>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">crontab [ -u user ] file<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">crontab</span> <span class="token punctuation">[</span> -u user <span class="token punctuation">]</span> <span class="token function">file</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>或</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">crontab [ -u user ] { -l | -r | -e }<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">crontab</span> <span class="token punctuation">[</span> -u user <span class="token punctuation">]</span> <span class="token punctuation">{</span> -l <span class="token operator">|</span> -r <span class="token operator">|</span> -e <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><strong>说明：</strong></p>
 <p>crontab 是用来让使用者在固定时间或固定间隔执行程序之用，换句话说，也就是类似使用者的时程表。</p>
@@ -572,19 +572,19 @@ crond 命令每分锺会定期检查是否有要执行的工作，如果有要�
 <pre class="line-numbers language-none"><code class="language-none">20 0-23/2 * * * echo "haha"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>下面再看看几个具体的例子：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">0 */2 * * * /sbin/service httpd restart  意思是每两个小时重启一次apache 
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token number">0</span> */2 * * * /sbin/service httpd restart  意思是每两个小时重启一次apache 
 
-50 7 * * * /sbin/service sshd start  意思是每天7：50开启ssh服务 
+<span class="token number">50</span> <span class="token number">7</span> * * * /sbin/service sshd start  意思是每天7：50开启ssh服务 
 
-50 22 * * * /sbin/service sshd stop  意思是每天22：50关闭ssh服务 
+<span class="token number">50</span> <span class="token number">22</span> * * * /sbin/service sshd stop  意思是每天22：50关闭ssh服务 
 
-0 0 1,15 * * fsck /home  每月1号和15号检查/home 磁盘 
+<span class="token number">0</span> <span class="token number">0</span> <span class="token number">1,15</span> * * <span class="token function">fsck</span> /home  每月1号和15号检查/home 磁盘 
 
-1 * * * * /home/bruce/backup  每小时的第一分执行 /home/bruce/backup这个文件 
+<span class="token number">1</span> * * * * /home/bruce/backup  每小时的第一分执行 /home/bruce/backup这个文件 
 
-00 03 * * 1-5 find /home "*.xxx" -mtime +4 -exec rm {} \;  每周一至周五3点钟，在目录/home中，查找文件名为*.xxx的文件，并删除4天前的文件。
+00 03 * * <span class="token number">1</span>-5 <span class="token function">find</span> /home <span class="token string">"*.xxx"</span> -mtime +4 -exec <span class="token function">rm</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">\</span><span class="token punctuation">;</span>  每周一至周五3点钟，在目录/home中，查找文件名为*.xxx的文件，并删除4天前的文件。
 
-30 6 */10 * * ls  意思是每月的1、11、21、31日是的6：30执行一次ls命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token number">30</span> <span class="token number">6</span> */10 * * <span class="token function">ls</span>  意思是每月的1、11、21、31日是的6：30执行一次ls命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
