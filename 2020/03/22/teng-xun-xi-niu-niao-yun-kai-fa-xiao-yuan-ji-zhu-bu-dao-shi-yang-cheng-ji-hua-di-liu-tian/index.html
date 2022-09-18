@@ -1,0 +1,1890 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="腾讯犀牛鸟云开发校园技术布道师养成计划第六天, maolei 笔记 python golang 云原生 爬虫 算法 微信小程序">
+    <meta name="description" content="云开发快速入门如果你想免费、快速的开发出一个完整的项目，用小程序的云开发可能是最好的选择。小程序的云开发所用到的主要是前端开发的知识。
+技术文档：云开发官方文档开通云开发服务下载NodejsNodeJS是在服务端运行JavaScript的运">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QHZBBHN2YF"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-QHZBBHN2YF');
+</script>
+
+
+    <title>腾讯犀牛鸟云开发校园技术布道师养成计划第六天 | 要多吃鱼</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="要多吃鱼" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">要多吃鱼</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">要多吃鱼</div>
+        <div class="logo-desc">
+            
+            软件工程 | 腾讯云原生高级开发工程师
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/lei025" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/lei025" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">腾讯犀牛鸟云开发校园技术布道师养成计划第六天</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/">
+                                <span class="chip bg-color">云开发</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                                <span class="chip bg-color">微信小程序</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="post-category">
+                                微信小程序
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-03-22
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-08-25
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    18 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+        <!-- 代码块折行 -->
+        <style type="text/css">
+            code[class*="language-"], pre[class*="language-"] { white-space: pre-wrap !important; }
+        </style>
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="云开发快速入门"><a href="#云开发快速入门" class="headerlink" title="云开发快速入门"></a>云开发快速入门</h1><p>如果你想免费、快速的开发出一个完整的项目，用小程序的云开发可能是最好的选择。小程序的云开发所用到的主要是前端开发的知识。</p>
+<h4 id="技术文档：云开发官方文档"><a href="#技术文档：云开发官方文档" class="headerlink" title="技术文档：云开发官方文档"></a><strong>技术文档：</strong><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html">云开发官方文档</a></h4><h4 id="开通云开发服务"><a href="#开通云开发服务" class="headerlink" title="开通云开发服务"></a>开通云开发服务</h4><h4 id="下载Nodejs"><a href="#下载Nodejs" class="headerlink" title="下载Nodejs"></a>下载Nodejs</h4><p><strong>NodeJS</strong>是在服务端运行JavaScript的运行环境，云开发所使用的服务端环境就是NodeJS。<strong>npm</strong>是Node包管理器，通过npm，我们可以非常方便的安装云开发所需要的依赖包。</p>
+<h4 id="部署并上传云函数"><a href="#部署并上传云函数" class="headerlink" title="部署并上传云函数"></a>部署并上传云函数</h4><p><strong>部署并上传云函数</strong></p>
+<p><strong>cloudfuntions文件夹</strong>图标里有朵小云，表示这就是<strong>云函数根目录</strong>。展开cloudfunctions，我们可以看到里面有login、openapi、callback、echo文件夹，这些就是<strong>云函数目录</strong>。而<strong>miniprogram文件夹</strong>则放置的是小程序的页面文件。</p>
+<blockquote>
+<p>cloudfunctions里放的是云函数，miniprogram放的是小程序的页面，这并不是一成不变的，也就是说你也可以修改这些文件夹的名称，这取决于项目配置文件project.config.json里的如下配置项：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token string">"miniprogramRoot"</span><span class="token operator">:</span> <span class="token string">"miniprogram/"</span><span class="token punctuation">,</span>
+<span class="token string">"cloudfunctionRoot"</span><span class="token operator">:</span> <span class="token string">"cloudfunctions/"</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>但是你最好是让放小程序页面的文件夹以及放云函数的文件夹处于平级关系且都在项目的根目录下，便于管理。</p>
+</blockquote>
+<p><strong>上传所有云函数</strong></p>
+<p>接下来我们按照这样的流程把<strong>其他所有云函数</strong>（如openapi）都部署都上传，也就是要执行和上面相同的步骤，总结如下：</p>
+<ol>
+<li>右键云函数目录，选择在终端中打开，输入 npm install命令下载依赖文件；</li>
+<li>然后再右键云函数目录，点击“<strong>创建并部署：所有文件</strong>”</li>
+<li>在云开发控制台–云函数–<strong>云函数列表</strong>查看云函数是否部署成功。</li>
+</ol>
+<h4 id="npm包管理器与依赖模块"><a href="#npm包管理器与依赖模块" class="headerlink" title="npm包管理器与依赖模块"></a>npm包管理器与依赖模块</h4><p>npm install会下载云函数目录下的配置文件<strong>package.json</strong>里的<strong>dependencies</strong>，它表示的是当前云函数需要依赖的模块。package.json在哪里，就在哪里执行npm install，没有package.json，没有dependencies，就没法下载.</p>
+<p>执行npm install命令下载的依赖模块会放在<strong>node_modules</strong>文件夹里，</p>
+<h4 id="获取openid与云函数login"><a href="#获取openid与云函数login" class="headerlink" title="获取openid与云函数login"></a>获取openid与云函数login</h4><p>当我们把<strong>云函数login</strong>部署上传成功后，就可以在模拟器以及手机（需要重新点击<strong>预览</strong>图标并扫描二维码）里<strong>点击获取openid</strong>了。</p>
+<p><strong>点击获取openid</strong></p>
+<p>openid是小程序用户的唯一标识，也就是每一个小程序用户都有一个唯一的openid。点击“<strong>点击获取openid</strong>”，在<strong>用户管理指引</strong>页面如果显示“用户id获取成功”以及一串字母+数字，那么表示你login云函数部署并上传成功啦。<strong>如果获取openid失败，你则需要解决login云函数的部署上传，才能进行下面的步骤哦</strong>。</p>
+<p><strong>调用云函数的解读</strong></p>
+<p><strong>技术文档：</strong><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/functions/callFunction.html">调用云函数wx.cloud.callFunction</a></p>
+<p>调用云函数的方法很简单，只需要填写云函数的名称name（这里为login），以及需要传递的参数（这里并没有上传参数），就可以进行调用。在success回调函数里添加以下代码<strong>打印res对象</strong>：</p>
+<p>再点击“<strong>点击获取openid</strong>”按钮，就能看到完整的res对象，res对象有三个参数：</p>
+<ul>
+<li><strong>requestID</strong>：云函数执行 ID，可用于在<strong>云开发控制台</strong>查找日志，打开云开发控制台–云函数–日志，可以在这里根据云函数函数名以及requestID来筛选查看云函数的调用日志（含返回结果）；</li>
+<li><strong>result：**</strong>云函数返回的结果**，login云函数返回的结果里包含appid、event对象，我们可以通过res.result.appid以及res.result.event访问它们；</li>
+<li>errMsg：显示云函数是否调用成功</li>
+</ul>
+<p>事件处理函数onGetOpenid调用云函数成功之后，干了三件事情：</p>
+<ul>
+<li>使用console.log打印openid，可以在点击按钮触发云函数在控制台看到该打印结果；</li>
+<li>把获取到的appid赋值给app.js文件里的globalData全局对象；</li>
+<li>跳转到userConsole页面；</li>
+</ul>
+<p>保存之后，右键点击index.js文件，选择<strong>云函数增量上传:（更新文件）</strong>，更新login云函数，</p>
+<p>打开<strong>云开发控制台</strong>–<strong>云函数</strong>–<strong>日志</strong>，<strong>按函数名筛选</strong>，选择login云函数，可以看到云函数被调用的日志记录，我们可以在日志里发现：</p>
+<ul>
+<li><strong>event对象</strong>包含程序用户的 openid 和小程序的 appid，而openid就相当于用户的身份证，我们可以根据openid获取到用户的昵称、头像等信息（后面会说明）；</li>
+<li>而<strong>context对象</strong>则是云函数的调用信息和运行状态。</li>
+<li>在<strong>返回结果</strong>里我们可以看到return返回的数据</li>
+</ul>
+<blockquote>
+<p>云函数的打印日志会显示<strong>在云开发控制台的日志里面</strong>，这一点非常重要，要多加利用。只要是打印日志，无论是显示在开发者工具控制台还是显示在云开发控制台的就没有不重要的。</p>
+</blockquote>
+<p><strong>getWXContext()</strong></p>
+<p>getWXContext()API是云开发服务端的工具类API，会返回小程序用户的openid、小程序appid、小程序用户的unionid等。说这么多不如直接打印，在下面添加一行打印信息：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> wxContext <span class="token operator">=</span> cloud<span class="token punctuation">.</span><span class="token function">getWXContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'getWXContext返回的结果'</span><span class="token punctuation">,</span>wxContext<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>技术文档：</strong><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/utils/getWXContext.html">getWXContext()</a></p>
+<p><strong>eturn</strong></p>
+<p>return语句是终止函数的执行，并返回一个指定的值给<strong>函数调用者</strong>。</p>
+<h4 id="新建云函数"><a href="#新建云函数" class="headerlink" title="新建云函数"></a>新建云函数</h4><h4 id="体验上传图片"><a href="#体验上传图片" class="headerlink" title="体验上传图片"></a>体验上传图片</h4><p><strong>上传图片到云存储</strong></p>
+<h4 id="体验云调用之服务端调用"><a href="#体验云调用之服务端调用" class="headerlink" title="体验云调用之服务端调用"></a>体验云调用之服务端调用</h4><h4 id="体验前端操作数据库"><a href="#体验前端操作数据库" class="headerlink" title="体验前端操作数据库"></a>体验前端操作数据库</h4><p><strong>前端操作数据库的页面逻辑</strong></p>
+<p>以上的函数是在小程序的前端页面来操作数据库，点击开发者工具模拟器云开发QuickStart里的前端操作数据库，</p>
+<ul>
+<li>在第1步（数据库指引有标注），我们会获取到用户的openid，也就是说你没有获取到openid是没法通过小程序的前端来操作数据库的哦</li>
+<li>第2步，需要我们在<strong>云开发控制台</strong>里的<strong>数据库管理页</strong>创建一个<strong>counters</strong>的集合（不需添加数据）；</li>
+<li>第3步，点击按钮页面的按钮“<strong>新增记录</strong>”（按钮就在这个页面的第4条与第5条之间，看起来不是那么明显），这时会调用 onAdd方法，往<strong>counters集合</strong>新增一个记录（之前手动添加有木有很辛苦？），我们可以去云开发控制台的<strong>数据库管理页</strong>查看一下counters集合是不是有了一条记录；大家可以多点击几下<strong>新增记录</strong>按钮，然后去云开发控制台看数据库又有什么变化。也就是小程序前端页面通过 onAdd方法，在数据库新增了记录。</li>
+<li>第4步，点击按钮<strong>查询记录</strong>，这时调用的是 onQuery方法就能在小程序里<strong>获取到</strong>第3步我们存储到数据库里的数据啦</li>
+<li>第5步，点击计数器按钮+号和-号，可以更新count的值，点击+号按钮会调用 onCounterInc方法，而点击-号 onCounterDec方法，比如我们点击加号到7，再去<strong>数据库管理页</strong>查看最新的一条记录（也就是最后一条），它的count由原来的1更新到了7（<strong>先点刷新按钮</strong>），我们再点击-号按钮到5，再来数据库管理页查看有什么变化变化（<strong>先点刷新按钮</strong>）</li>
+<li>第6步，点击<strong>删除记录</strong>按钮，会调用 onRemove方法，这时会删掉数据库里最新的记录（也就是第5步里的那一条记录）。</li>
+</ul>
+<p>通过实战我们了解到，databaseGuide.js文件里的 onAdd、 onQuery、 onCounterInc、 onCounterDec、 onRemove可以实现小程序的前端页面来操作数据库。</p>
+<blockquote>
+<p>在前面JavaScript的章节里我们了解到数据以及数据的存储是非常重要的，而有了数据库，用函数生成的数据能够比缓存存储的更加持久，而且在上面我们实现了对数据进行增(添加)、删(删除)、改(修改、更新)、查(查询并渲染到页面)，不仅如此，缓存的容量也比较有限，最多不过10M，而数据库可以存几百G以上，可见它的重要性。</p>
+</blockquote>
+<p>当新建了并配置了云函数根目录为cloudfunctions文件夹之后，云函数根目录里并没有云函数，我们可以右键点击云函数根目录cloudfunctions文件夹选择<strong>同步云函数列表</strong>，可以把所有云端的云函数列表都列举出来（这只是列举了列表），而要修改云函数里面的内容，我们可以右键点击其中的一个云函数目录选择<strong>下载云函数</strong>即可。</p>
+<p>除此之外，我们需要小程序的app.js的生命周期函数onLaunch里使用wx.cloud.init()来初始化云开发能力：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token function-variable function">onLaunch</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>wx<span class="token punctuation">.</span>cloud<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'请使用 2.2.3 或以上的基础库以使用云能力'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      env<span class="token operator">:</span> <span class="token string">'你的环境ID'</span><span class="token punctuation">,</span>
+      traceUser<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>云开发能力全局只需要初始化一次即可，这里的traceUser属性设置为true，会将用户访问记录到用户管理中，在云开发控制台的<strong>运营分析</strong>—<strong>用户访问</strong>里可以看到访问记录。</p>
+<h4 id="基础库与wx-cloud"><a href="#基础库与wx-cloud" class="headerlink" title="基础库与wx.cloud"></a>基础库与wx.cloud</h4><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">CloudID<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//用于云调用获取开放数据</span>
+callFunction<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//调用云函数</span>
+database<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//获取数据库的引用</span>
+deleteFile<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//从云存储空间删除文件</span>
+downloadFile<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//从云存储空间下载文件</span>
+getTempFileURL<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//用云文件 ID 换取真实链接</span>
+init<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">//初始化云开发能力</span>
+uploadFile<span class="token operator">:</span> <span class="token function">ƒ</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//上传文件至云存储空间</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="云开发能力"><a href="#云开发能力" class="headerlink" title="云开发能力"></a>云开发能力</h1><p>通过云开发的能力进行调用云函数、上传图片、操作数据库以及使用小程序的一些开放接口，下面来进一步了解和使用云开发能力，并加强对<strong>云端测试</strong>、<strong>本地调试</strong>以及<strong>本地Console日志打印</strong>，<strong>云端日志打印</strong>的理解。</p>
+<h4 id="本地调试与云端测试"><a href="#本地调试与云端测试" class="headerlink" title="本地调试与云端测试"></a>本地调试与云端测试</h4><p><strong>第一步：新建云函数</strong></p>
+<p><strong>第二步：本地调试云函数是否正确</strong></p>
+<p><strong>第三步：云端测试云函数是否正确</strong></p>
+<h4 id="小程序端与服务端"><a href="#小程序端与服务端" class="headerlink" title="小程序端与服务端"></a>小程序端与服务端</h4><p><strong>小程序端与云端的初始化</strong></p>
+<p>小程序默认可以创建两个环境，这两个环境都有云函数配置、数据库、云存储且独立隔离，开发上会存在两个环境切换的情况（一个用于生产环境，一个用于测试环境），而<strong>区别这两个环境的就是它们的环境ID</strong>，小程序端与云端的初始化时要注意。</p>
+<p>云函数中的API调用的环境也可以使用初始化来设置。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">cloud<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  env<span class="token operator">:</span> cloud<span class="token punctuation">.</span><span class="token constant">DYNAMIC_CURRENT_ENV</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>cloud.DYNAMIC_CURRENT_ENV</strong>设置 API 默认环境等于当前所在环境<strong>。</strong>建议所有的云函数都使用以上方式来初始化，也就是配置env的值为cloud.DYNAMIC_CURRENT_ENV或使用你的环境ID，不要为空**。</p>
+<p><strong>关于wx-server-sdk</strong></p>
+<p>每一个云函数都会用到wx-server-sdk这个Node包，而要使用这个包都需要有Nodejs环境，小程序端的本地需要我们自己下载Nodejs（前面已下载），而云端则自带Nodejs环境。</p>
+<p><strong>async与await</strong></p>
+<p>在wx-server-sdk中不再兼容success、fail、complete回调，只会返回Promise。在云函数中也经常会需要处理一些异步操作，在异步操作完成后再返回结果给到调用方，我们可以通过在云函数中返回一个 Promise 的方法来实现。Promise表示异步操作返回的结果。在新建的云函数里会看到下面这样的一个语句（有 async）：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">exports<span class="token punctuation">.</span><span class="token function-variable function">main</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>async表示函数里有异步操作，async函数的返回值是一个 Promise 对象。在后面还会遇到 await，表示紧跟在它后面的表达式需要等待结果；以及promise对象的<strong>then()方法</strong>（有点类似于success回调函数），和<strong>catch()方法</strong>（有点类似于fail回调函数）</p>
+<blockquote>
+<p><strong>云函数的注意事项</strong></p>
+<ul>
+<li>在云函数部署并上传到云端之后，更新里面的文件比如index.js、config.json，建议右键点击更新好的文件（不是云函数目录）选择<strong>云函数增量上传：更新文件</strong>，<strong>不建议通过上传并部署所有文件的方式</strong>，否则在几分钟内会出现云函数调用失败的情况；</li>
+<li>删除一个云函数之后，<strong>不建议再新建一个同名的云函数并上传部署</strong>，否则在十多分钟内会出现云函数调用失败的情况，建议换一个云函数名，比如login换成user，在小程序端使用 wx.cloud.callFunction({name: ‘’})调用云函数时把name的值换成user就可以了</li>
+<li>调用云函数时，我们还可以在开发者工具调试面板的NetWork标签查看调用云函数的情况。</li>
+</ul>
+</blockquote>
+<h4 id="获取用户信息和登录"><a href="#获取用户信息和登录" class="headerlink" title="获取用户信息和登录"></a>获取用户信息和登录</h4><blockquote>
+<p>使用open-type=”getUserInfo” 来获取用户信息的作用和 wx.getUserInfo API基本效果是一样的，区别在于wx.getUserInfo 这种方式最好是在用户允许获取公开信息（也就是res.authSetting[‘scope.userInfo’]的值为true）之后再调用，如果用户拒绝了授权就不会再有弹窗（除非用户删掉了你的小程序再使用），调用就会失败，而使用组件的方式是用户主动点击，用户即使拒绝了，再点击仍会弹出授权弹窗。所以推荐先使用组件来获取用户授权，然后再来使用wx.getUserInfo来获取用户信息。</p>
+</blockquote>
+<p><strong>通过button获取用户信息</strong></p>
+<p><strong>获取用户高清头像</strong></p>
+<p>我们发现获取到的头像不是很清晰，这是因为默认的头像大小为132<em>132（<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/api/open-api/user-info/UserInfo.html">UserInfo用户头像说明</a>），如果把avatarUrl链接后面的132修改为0就能获取到640</em>640大小的头像了：</p>
+<p><strong>页面加载时就显示用户信息</strong></p>
+<p><strong>openid、用户信息与登录</strong></p>
+<p>尽管我们已经获取到了用户的头像、昵称等信息，但是这不能称之为真正意义的登录，只有获取到了用户身份的唯一ID也就是<strong>openid</strong>，我们才能把用户行为比如点赞、评论、发布文章、收藏等与用户挂钩，用户这些行为都与数据库有关，而<strong>能够确定点赞、评论、文章、收藏这些数据与用户关系的就是openid</strong>，也就是说<strong>只要获取到了openid就意味着用户已经登录</strong>，而获取用户信息（如头像、昵称）不过是一个附加服务，这两个是可以完全独立的。没有openid，我们也无法把用户信息给存储到数据库，也就没法让用户自定义用户信息。无论是用户行为，还是用户的信息，openid都是一个重要的桥梁。</p>
+<blockquote>
+<p>通过前面的login云函数，我们就已经可以获取到用户的openid。无需维护复杂的鉴权机制，即可获取天然可信任的用户登录态（openid），是云开发的一个重要优势。无论是云存储还是云数据库，openid都扮演着一个重要的角色。</p>
+</blockquote>
+<h4 id="小程序端上传图片到云存储"><a href="#小程序端上传图片到云存储" class="headerlink" title="小程序端上传图片到云存储"></a>小程序端上传图片到云存储</h4><p>要把图片上传到云存储，会使用到wx.cloud.uploadFile，<strong>这个API是小程序端的API</strong>，它是把<strong>本地资源也就是临时文件里的文件</strong>上传到云存储里。在前面《<strong>图片、缓存与文件</strong>》章节里我们已经了解到如何把图片上传到小程序的临时文件，而要把临时文件上传到云存储，则需要调用wx.cloud.uploadFile API。</p>
+<p><strong>技术文档：</strong><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-client-api/storage/uploadFile.html">wx.cloud.uploadFile</a></p>
+<p>在wx.cloud.uploadFile技术文档里，可以看到要调用API，需要获取图片的<strong>filePath</strong>，在小程序里为临时文件的路径，也就是要把上传到小程序的临时文件路径赋值给它；还有一个<strong>cloudPath</strong>，这个为文件的云存储路径，这个是<strong>我们可以任意设置的</strong>。</p>
+<p><strong>文件名与后缀的处理</strong></p>
+<p>我们知道一个文件由<strong>文件名称</strong>和<strong>文件后缀</strong>构成，比如tcb.jpg和cloudbase.png，jpeg说明图片的格式是JPG格式，而png说明图片是PNG格式，文件名称相同<strong>且</strong>格式相同就是出现覆盖，如果我们随意更改了<strong>文件的后缀</strong>，大多数文件就会打不开。所以要把<strong>cloudPath云存储的路径</strong>需要我们把文件名和后缀给处理好。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> cloudPath <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> filePath<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.[^.]+?$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>给文件名加上时间戳和一个随机数，时间戳是以毫秒计算，而随机数是以1000内的正整数，除非1秒钟（1秒=1000毫秒）上传几十万张照片，不然文件名是不会重复的。</p>
+<blockquote>
+<p><strong>上传图片到云存储是无法直接获取到图片的下载地址的</strong></p>
+</blockquote>
+<p><strong>云存储的二级目录</strong></p>
+<p><strong>渲染云存储图片到组件</strong></p>
+<blockquote>
+<blockquote>
+<p>在云开发控制台的存储里，我们可以看到每张图片的详细信息都有<strong>上传者 Open ID</strong>，无论你是使用开发者工具在模拟器的小程序里上传还是预览在手机的小程序里上传，只要你用的是同一个微信账号，这个上传者openid都是一致的，<strong>云存储会自动记录上传者的openid</strong>。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+</blockquote>
+<h4 id="云函数上传图片到云存储"><a href="#云函数上传图片到云存储" class="headerlink" title="云函数上传图片到云存储"></a>云函数上传图片到云存储</h4><p>云开发不仅在小程序端可以上传文件到云存储，还可以通过云函数也就是云端上传图片到云存储（这里会涉及到一点Nodejs的知识）。</p>
+<p><strong>技术文档：</strong><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/reference-server-api/storage/uploadFile.html">uploadFile</a></p>
+<p>注意<strong>云函数上传图片的API属于服务端API，与wx.cloud.uploadFile是小程序端API不同</strong>。</p>
+<p>由于<strong>云端测试无法获取用户登陆态信息</strong>，所以我们不能在云端测试里把图片上传到云存储，需要在小程序端调用，使用开发者工具在login.wxml输入以下代码，也就是新建一个绑定uploadimg事件处理函数的button用于触发：</p>
+<blockquote>
+<p>注意，通过这种方式上传到云存储的图片，是<strong>没有上传者 Open ID</strong>的，在云存储里查看这张图片的详细信息，就可以了解到。</p>
+</blockquote>
+<h4 id="调用数据库"><a href="#调用数据库" class="headerlink" title="调用数据库"></a>调用数据库</h4><p><strong>数据库的导入</strong></p>
+<p>打开云开发控制台，在数据库里新建一个集合<strong>zhihu_daily</strong>，导入该json文件，导入时会有冲突模式选择，看下面的介绍，推荐大家使用upsert：</p>
+<ul>
+<li>Insert：总是插入新记录</li>
+<li>Upsert：如果记录存在则更新，否则插入新记录</li>
+</ul>
+<p>导入后，发现数据库自动给每一条数据（记录）都加了唯一的标识<strong>_id</strong>。</p>
+<p><strong>小程序端调用数据库</strong></p>
+<p>在小程序端调用数据库的方式很简单，我们可以把下面的代码写到一个事件处理函数里，然后点击组件触发事件处理函数来调用；也可以直接写到页面的生命周期函数里面；还可以把它写到app.js小程序的生命周期函数里面。</p>
+<p>使用开发者工具，将下面的代码写到login.js的onLoad函数里面，我们</p>
+<ul>
+<li>先使用<strong>wx.cloud.database()**获取</strong>数据库**的引用（相当于连接数据库）;</li>
+<li>再使用**db.collection()**获取集合的引用；</li>
+<li>再通过Collection.get来获取集合里的记录.</li>
+</ul>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> db <span class="token operator">=</span> wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'zhihu_daily'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<blockquote>
+<p>如果没有指定 limit，则默认最多取 20 条记录</p>
+</blockquote>
+<p><strong>云函数调用数据库</strong></p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> cloud <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'wx-server-sdk'</span><span class="token punctuation">)</span>
+cloud<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  env<span class="token operator">:</span> cloud<span class="token punctuation">.</span><span class="token constant">DYNAMIC_CURRENT_ENV</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> db <span class="token operator">=</span> cloud<span class="token punctuation">.</span><span class="token function">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">main</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">await</span> db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'zhihu_daily'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>openid与数据库</strong></p>
+<p>在云开发控制台的数据库标签里，打开上一节内容里的counters集合，在这个集合里我们可以看到每条记录除了有_id字段以外，还有一个<strong>_openid字段</strong>用来标志每条记录的创建者（也就是小程序的用户）。</p>
+<p>我们可以自定义 _id（也就是给数据添加一个_id字段并填入任意值），但不可自定义和修改 _openid 。 _openid 是在文档创建时由系统根据小程序用户默认创建的，可以用来标识和定位文档。和云存储一样，数据库的记录也和openid有着紧密的联系。</p>
+<p><img src="http://ww1.sinaimg.cn/large/005W6BOngy1gd4wn77wgjj31hc0u014r.jpg" alt="2020-03-24 12-26-54屏幕截图.png"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">毛雷</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://maolei.space/2020/03/22/teng-xun-xi-niu-niao-yun-kai-fa-xiao-yuan-ji-zhu-bu-dao-shi-yang-cheng-ji-hua-di-liu-tian/">https://maolei.space/2020/03/22/teng-xun-xi-niu-niao-yun-kai-fa-xiao-yuan-ji-zhu-bu-dao-shi-yang-cheng-ji-hua-di-liu-tian/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">毛雷</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/">
+                                    <span class="chip bg-color">云开发</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                                    <span class="chip bg-color">微信小程序</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'JUQwQqwjeKI8uh2s1wYAQ4Q9-gzGzoHsz',
+        appKey: 'z10R4yX2QzYiFL13ELUtdqX6',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/03/24/teng-xun-xi-niu-niao-yun-kai-fa-xiao-yuan-ji-zhu-bu-dao-shi-yang-cheng-ji-hua-di-qi-tian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="腾讯犀牛鸟云开发校园技术布道师养成计划第七天">
+                        
+                        <span class="card-title">腾讯犀牛鸟云开发校园技术布道师养成计划第七天</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="post-category">
+                                    微信小程序
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/">
+                        <span class="chip bg-color">云开发</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                        <span class="chip bg-color">微信小程序</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/21/teng-xun-xi-niu-niao-yun-kai-fa-xiao-yuan-ji-zhu-bu-dao-shi-yang-cheng-ji-hua-di-wu-tian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="腾讯犀牛鸟云开发校园技术布道师养成计划第五天">
+                        
+                        <span class="card-title">腾讯犀牛鸟云开发校园技术布道师养成计划第五天</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="post-category">
+                                    微信小程序
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/">
+                        <span class="chip bg-color">云开发</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                        <span class="chip bg-color">微信小程序</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('1024')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 要多吃鱼<br />'
+            + '文章作者: 毛雷<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2020-2022</span>
+            
+            <a href="/about" target="_blank">毛雷</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">87.2k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2020";
+                        var startMonth = "1";
+                        var startDate = "1";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+                <span id="icp"><img src="/medias/icp.png"
+                                    style="vertical-align: text-bottom;"/>
+                <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2020018290号-2</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/lei025" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:maolei025@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=849078367" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 849078367" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?84e7e269c9f409a22e967b8b82ebb9a2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

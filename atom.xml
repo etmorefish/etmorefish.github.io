@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>要多吃鱼</title>
+  
+  <subtitle>个人笔记</subtitle>
+  <link href="https://maolei.space/atom.xml" rel="self"/>
+  
+  <link href="https://maolei.space/"/>
+  <updated>2022-09-18T03:41:18.409Z</updated>
+  <id>https://maolei.space/</id>
+  
+  <author>
+    <name>毛雷</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kubernetets核心对象和控制器模式</title>
+    <link href="https://maolei.space/2022/09/06/kubernetets-he-xin-dui-xiang-he-kong-zhi-qi-mo-shi/"/>
+    <id>https://maolei.space/2022/09/06/kubernetets-he-xin-dui-xiang-he-kong-zhi-qi-mo-shi/</id>
+    <published>2022-09-06T07:09:23.000Z</published>
+    <updated>2022-09-18T03:41:18.409Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Kubernetets核心对象和控制器模式&quot;&gt;&lt;a href=&quot;#Kubernetets核心对象和控制器模式&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://maolei.space/categories/Docker/"/>
+    
+    <category term="Kubernetets" scheme="https://maolei.space/categories/Docker/Kubernetets/"/>
+    
+    
+    <category term="Docker" scheme="https://maolei.space/tags/Docker/"/>
+    
+    <category term="容器" scheme="https://maolei.space/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+    <category term="K8s" scheme="https://maolei.space/tags/K8s/"/>
+    
+    <category term="Kubernetets" scheme="https://maolei.space/tags/Kubernetets/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kubernetets的核心架构原则</title>
+    <link href="https://maolei.space/2022/09/06/kubernetets-de-he-xin-jia-gou-yuan-ze/"/>
+    <id>https://maolei.space/2022/09/06/kubernetets-de-he-xin-jia-gou-yuan-ze/</id>
+    <published>2022-09-06T07:09:23.000Z</published>
+    <updated>2022-09-18T03:40:36.219Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Kubernetets的核心架构原则&quot;&gt;&lt;a href=&quot;#Kubernetets的核心架构原则&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://maolei.space/categories/Docker/"/>
+    
+    <category term="Kubernetets" scheme="https://maolei.space/categories/Docker/Kubernetets/"/>
+    
+    
+    <category term="Docker" scheme="https://maolei.space/tags/Docker/"/>
+    
+    <category term="容器" scheme="https://maolei.space/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+    <category term="K8s" scheme="https://maolei.space/tags/K8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>容器核心技术</title>
+    <link href="https://maolei.space/2022/09/05/rong-qi-he-xin-ji-zhu/"/>
+    <id>https://maolei.space/2022/09/05/rong-qi-he-xin-ji-zhu/</id>
+    <published>2022-09-05T07:09:23.000Z</published>
+    <updated>2022-09-17T09:23:16.132Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;容器核心技术&quot;&gt;&lt;a href=&quot;#容器核心技术&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://maolei.space/categories/Docker/"/>
+    
+    
+    <category term="Docker" scheme="https://maolei.space/tags/Docker/"/>
+    
+    <category term="容器" scheme="https://maolei.space/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+    <category term="K8s" scheme="https://maolei.space/tags/K8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>victoriametrics_vs_tdengine_single_version</title>
+    <link href="https://maolei.space/2022/08/08/cloudnativate/vm-vs-tdengine-single-version/"/>
+    <id>https://maolei.space/2022/08/08/cloudnativate/vm-vs-tdengine-single-version/</id>
+    <published>2022-08-08T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;victoriametrics-vs-tdengine-single-version&quot;&gt;&lt;a href=&quot;#victoriametrics-vs-tdengine-single-version&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+    <category term="victoriametrics" scheme="https://maolei.space/tags/victoriametrics/"/>
+    
+    <category term="cadvisor" scheme="https://maolei.space/tags/cadvisor/"/>
+    
+    <category term="tdengine" scheme="https://maolei.space/tags/tdengine/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>InfluxDB不同版本调研</title>
+    <link href="https://maolei.space/2022/07/28/cloudnativate/influxdb1.x-vs-2.x/"/>
+    <id>https://maolei.space/2022/07/28/cloudnativate/influxdb1.x-vs-2.x/</id>
+    <published>2022-07-28T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;InfluxDB&quot;&gt;&lt;a href=&quot;#InfluxDB&quot; class=&quot;headerlink&quot; title=&quot;InfluxDB&quot;&gt;&lt;/a&gt;InfluxDB&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;InfluxDB是时序数据库中应用比较广泛的一种，在DB-Engines</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="influxdb" scheme="https://maolei.space/tags/influxdb/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>InfluxDB不同版本调研2</title>
+    <link href="https://maolei.space/2022/07/28/cloudnativate/influxdb2/"/>
+    <id>https://maolei.space/2022/07/28/cloudnativate/influxdb2/</id>
+    <published>2022-07-28T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;InfluxDB不同版本调研&quot;&gt;&lt;a href=&quot;#InfluxDB不同版本调研&quot; class=&quot;headerlink&quot; title=&quot;InfluxDB不同版本调研&quot;&gt;&lt;/a&gt;InfluxDB不同版本调研&lt;/h1&gt;&lt;h1 id=&quot;一、关键概念&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="influxdb" scheme="https://maolei.space/tags/influxdb/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>InfluxDB存储原理</title>
+    <link href="https://maolei.space/2022/07/27/cloudnativate/influx-yuan-li/"/>
+    <id>https://maolei.space/2022/07/27/cloudnativate/influx-yuan-li/</id>
+    <published>2022-07-27T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;InfluxDB存储原理&quot;&gt;&lt;a href=&quot;#InfluxDB存储原理&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="influxdb" scheme="https://maolei.space/tags/influxdb/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iInfluxDB 2.0 开源正式发布</title>
+    <link href="https://maolei.space/2022/07/26/cloudnativate/influx2.x/"/>
+    <id>https://maolei.space/2022/07/26/cloudnativate/influx2.x/</id>
+    <published>2022-07-26T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;InfluxDB-2-0-开源正式发布&quot;&gt;&lt;a href=&quot;#InfluxDB-2-0-开源正式发布&quot; class=&quot;headerlink&quot; title=&quot;InfluxDB 2.0 开源正式发布&quot;&gt;&lt;/a&gt;InfluxDB 2.0</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="influxdb" scheme="https://maolei.space/tags/influxdb/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>influx_vs_victoriametrics_single_test_report</title>
+    <link href="https://maolei.space/2022/07/25/cloudnativate/influx-vs-vm-single-version/"/>
+    <id>https://maolei.space/2022/07/25/cloudnativate/influx-vs-vm-single-version/</id>
+    <published>2022-07-25T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;influx-vs-victoriametrics-single-test-report&quot;&gt;&lt;a href=&quot;#influx-vs-victoriametrics-single-test-report&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="influxdb" scheme="https://maolei.space/tags/influxdb/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+    <category term="victoriametrics" scheme="https://maolei.space/tags/victoriametrics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GoByExample-变量</title>
+    <link href="https://maolei.space/2022/07/24/gobyexample-bian-liang/"/>
+    <id>https://maolei.space/2022/07/24/gobyexample-bian-liang/</id>
+    <published>2022-07-24T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;GoByExample-变量&quot;&gt;&lt;a href=&quot;#GoByExample-变量&quot; class=&quot;headerlink&quot; title=&quot;GoByExample-变量&quot;&gt;&lt;/a&gt;GoByExample-变量&lt;/h1&gt;&lt;h3 id=&quot;1-变量的来历&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Go" scheme="https://maolei.space/categories/Go/"/>
+    
+    
+    <category term="Go" scheme="https://maolei.space/tags/Go/"/>
+    
+    <category term="GoByExamble" scheme="https://maolei.space/tags/GoByExamble/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>influx_vs_victoriametrics_cluster_test_report</title>
+    <link href="https://maolei.space/2022/07/24/cloudnativate/influx-vs-vm-cluster-version/"/>
+    <id>https://maolei.space/2022/07/24/cloudnativate/influx-vs-vm-cluster-version/</id>
+    <published>2022-07-24T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;influx-vs-victoriametrics-cluster-test-report&quot;&gt;&lt;a href=&quot;#influx-vs-victoriametrics-cluster-test-report&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="influxdb" scheme="https://maolei.space/tags/influxdb/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+    <category term="victoriametrics" scheme="https://maolei.space/tags/victoriametrics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Single Version installation</title>
+    <link href="https://maolei.space/2022/07/18/cloudnativate/single-version/"/>
+    <id>https://maolei.space/2022/07/18/cloudnativate/single-version/</id>
+    <published>2022-07-18T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Single-Version&quot;&gt;&lt;a href=&quot;#Single-Version&quot; class=&quot;headerlink&quot; title=&quot;Single Version&quot;&gt;&lt;/a&gt;Single Version&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;install</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="influxdb" scheme="https://maolei.space/tags/influxdb/"/>
+    
+    <category term="benchmark" scheme="https://maolei.space/tags/benchmark/"/>
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+    <category term="cadvisor" scheme="https://maolei.space/tags/cadvisor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7 安装 Prometheus，并配置后台启动</title>
+    <link href="https://maolei.space/2022/07/01/cloudnativate/install-prometheus/"/>
+    <id>https://maolei.space/2022/07/01/cloudnativate/install-prometheus/</id>
+    <published>2022-07-01T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CentOS7-安装-Prometheus，并配置后台启动&quot;&gt;&lt;a href=&quot;#CentOS7-安装-Prometheus，并配置后台启动&quot; class=&quot;headerlink&quot; title=&quot;CentOS7 安装</summary>
+        
+      
+    
+    
+    
+    <category term="tsdb" scheme="https://maolei.space/categories/tsdb/"/>
+    
+    
+    <category term="prometheus" scheme="https://maolei.space/tags/prometheus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Minicube</title>
+    <link href="https://maolei.space/2022/06/24/cloudnativate/minicube/"/>
+    <id>https://maolei.space/2022/06/24/cloudnativate/minicube/</id>
+    <published>2022-06-24T10:33:18.000Z</published>
+    <updated>2022-08-25T14:12:05.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Minicube&quot;&gt;&lt;a href=&quot;#Minicube&quot; class=&quot;headerlink&quot; title=&quot;Minicube&quot;&gt;&lt;/a&gt;Minicube&lt;/h1&gt;&lt;h2 id=&quot;minikebu-start&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="k8s" scheme="https://maolei.space/categories/k8s/"/>
+    
+    
+    <category term="k8s" scheme="https://maolei.space/tags/k8s/"/>
+    
+    <category term="minikube" scheme="https://maolei.space/tags/minikube/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Schedule-Python周期性任务调度工具</title>
+    <link href="https://maolei.space/2022/01/25/schedule-python-zhou-qi-xing-ren-wu-diao-du-gong-ju/"/>
+    <id>https://maolei.space/2022/01/25/schedule-python-zhou-qi-xing-ren-wu-diao-du-gong-ju/</id>
+    <published>2022-01-25T03:22:28.000Z</published>
+    <updated>2022-08-25T14:12:05.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Schedule-python周期性任务调度工具&quot;&gt;&lt;a href=&quot;#Schedule-python周期性任务调度工具&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://maolei.space/categories/Python/"/>
+    
+    <category term="工具" scheme="https://maolei.space/categories/Python/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Python" scheme="https://maolei.space/tags/Python/"/>
+    
+    <category term="Schedule" scheme="https://maolei.space/tags/Schedule/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python collections模块的高效数据类型</title>
+    <link href="https://maolei.space/2022/01/25/collections-mo-kuai-de-gao-xiao-shu-ju-lei-xing/"/>
+    <id>https://maolei.space/2022/01/25/collections-mo-kuai-de-gao-xiao-shu-ju-lei-xing/</id>
+    <published>2022-01-25T01:43:19.000Z</published>
+    <updated>2022-08-25T14:12:05.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;python-collections模块的高效数据类型&quot;&gt;&lt;a href=&quot;#python-collections模块的高效数据类型&quot; class=&quot;headerlink&quot; title=&quot;python</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://maolei.space/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://maolei.space/tags/Python/"/>
+    
+    <category term="Collections" scheme="https://maolei.space/tags/Collections/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新安装 Ubuntu 必备工具</title>
+    <link href="https://maolei.space/2022/01/01/new-install-ubuntu/"/>
+    <id>https://maolei.space/2022/01/01/new-install-ubuntu/</id>
+    <published>2022-01-01T14:12:01.000Z</published>
+    <updated>2022-08-25T14:12:05.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;新安装-Ubuntu-必备工具&quot;&gt;&lt;a href=&quot;#新安装-Ubuntu-必备工具&quot; class=&quot;headerlink&quot; title=&quot;新安装 Ubuntu 必备工具&quot;&gt;&lt;/a&gt;新安装 Ubuntu</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://maolei.space/categories/Linux/"/>
+    
+    
+    <category term="Ununtu" scheme="https://maolei.space/tags/Ununtu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>动态规划</title>
+    <link href="https://maolei.space/2021/06/06/dong-tai-gui-hua/"/>
+    <id>https://maolei.space/2021/06/06/dong-tai-gui-hua/</id>
+    <published>2021-06-06T08:11:05.000Z</published>
+    <updated>2022-08-25T14:12:05.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;动态规划&quot;&gt;&lt;a href=&quot;#动态规划&quot; class=&quot;headerlink&quot; title=&quot;动态规划&quot;&gt;&lt;/a&gt;动态规划&lt;/h1&gt;&lt;h2 id=&quot;判断动态规划&quot;&gt;&lt;a href=&quot;#判断动态规划&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="编程算法" scheme="https://maolei.space/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="Leetcode" scheme="https://maolei.space/tags/Leetcode/"/>
+    
+    <category term="算法" scheme="https://maolei.space/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>demo</title>
+    <link href="https://maolei.space/2020/12/31/demo/"/>
+    <id>https://maolei.space/2020/12/31/demo/</id>
+    <published>2020-12-31T07:51:46.000Z</published>
+    <updated>2022-08-25T14:12:05.397Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-html&quot; data-language=&quot;html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- i/o used</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://maolei.space/2020/11/27/test/"/>
+    <id>https://maolei.space/2020/11/27/test/</id>
+    <published>2020-11-27T04:20:35.000Z</published>
+    <updated>2022-08-25T14:12:05.400Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+</feed>
